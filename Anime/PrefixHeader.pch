@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  Anime
+//
+//  Created by 马鸣坤 on 15/10/28.
+//  Copyright (c) 2015年 wkf. All rights reserved.
+//
+
+#ifndef Anime_PrefixHeader_pch
+#define Anime_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIImageView+WebCache.h"
+#import "Reachability.h"
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+#import "UIImage+GIF.h"
+#import "FMDatabase.h"
+#import "FMDatabaseQueue.h"
+#import "FMResultSet.h"
+#import <Bmob.h>
+#import <BmobPush.h>
+#import <BmobInstallation.h>
+#import <BmobQuery.h>
+#import <BmobObject.h>
+#import <BmobObject+Subclass.h>
+#import <TencentOpenAPI.framework/Headers/TencentOAuth.h>
+#define  WIDTH self.view.frame.size.width
+#define  HEIGHT self.view.frame.size.height
+#define KScreenWidth [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+#define myRect(x,y,width,height) CGRectMake(KScreenWidth*(x)/375.0, y, KScreenWidth*(width)/375.0, height)
+
+#define ALERTTITLE @"温馨提示"
+#define NETWORKNOTWORKING @"网络连接不可用，请检查网络连接！"
+#define NETWORK3GWORKING @"注意，您正在使用数据流量哦~"
+#define USERNOTLOGIN @"请先登录"
+#define ALERT_OK @"确定"
+#define ALERT_CANCEL @"取消"
+#define ALERT_LOGIN @"请先登录"
+
+#endif
